@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: flood-prediction-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements-serve.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: OPENWEATHER_API_KEY
+        sync: false
+      - key: WEATHERAPI_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false

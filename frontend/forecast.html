@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Water Level Forecast | River Flood Forecast</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<main class="container py-3">
+<h1>Water Level Forecast</h1>
+<p class="lead-note">Observed levels and the next 30 days, with a P10 to P90 range.</p>
+<div class="panel"><label class="form-label" for="station-box">Station</label><input class="form-control" id="station-box" placeholder="Type a station or river name"></div><div class="row g-2 mb-3" id="summary"></div><div class="notice" id="note"></div>
+<div class="panel"><h2>Observed and predicted level</h2><div class="chart-box"><canvas id="level-chart"></canvas></div></div>
+<div class="panel"><h2>Daily forecast (metres)</h2><div class="table-wrap"><table class="table table-sm"><thead><tr><th>Date</th><th>Forecast</th><th>Range</th><th>Daily peak</th><th>Confidence</th></tr></thead><tbody id="rows"></tbody></table></div></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/forecast.js"></script>
+<script>stationPicker("station-box", showWaterLevel).catch(() => {});</script>
+</body>
+</html>

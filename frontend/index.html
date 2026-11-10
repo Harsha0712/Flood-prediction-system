@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>India River Flood Dashboard | River Flood Forecast</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<main class="container py-3">
+<h1>India River Flood Dashboard</h1>
+<p class="lead-note">30-day forecasts for Indian river monitoring stations.</p>
+<div class="row g-2 mb-3" id="stats"></div>
+<div class="notice" id="coverage">Loading coverage…</div>
+<div class="panel"><h2>Monitoring map</h2><div id="map"></div>
+<p class="small mt-2 mb-0">Green Normal, yellow Warning, orange Danger, red Critical, grey Unavailable (no official thresholds or no forecast).</p></div>
+<div class="panel"><h2>Latest observations</h2><div class="table-wrap"><table class="table table-sm"><thead><tr><th>River</th><th>Station</th><th>State</th><th>Level</th><th>Date</th><th>Risk</th></tr></thead><tbody id="latest"></tbody></table></div></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/map.js"></script>
+
+</body>
+</html>

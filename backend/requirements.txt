@@ -1,0 +1,9 @@
+-r requirements-serve.txt
+torch
+numpy
+pandas
+pyarrow
+xarray
+netCDF4
+imdlib
+pytest

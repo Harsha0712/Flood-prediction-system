@@ -2,5 +2,6 @@
 .env
 .venv/
 __pycache__/
-data_raw/
-data_processed/
+.pytest_cache/
+backend/data_files/
+backend/trained_models/
