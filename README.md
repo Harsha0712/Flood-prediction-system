@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # River Water Level Forecasting and Early Flood Warning
 
 College mini project. It forecasts river levels and rainfall for the next 30 days using deep learning, for stations in one Indian river basin (Subernarekha). Another CWC basin can be used by changing `BASIN_CODE` in `backend/settings.py`.
@@ -64,3 +65,6 @@ Never commit `.env`. Render only serves `results.json`, so re-run the steps abov
 
 - [CWC river water level](https://nwdp.nwic.gov.in/en/dataset/river-water-level-telemetry-hourly-central-water-commission-cwc)
 - [IMD gridded rainfall](https://www.imdpune.gov.in/cmpg/Griddata/Rainfall_25_NetCDF.html)
+=======
+# Flood-prediction-system
+>>>>>>> a1b96b93a96b5597aae661c6d6463c59ef775257
